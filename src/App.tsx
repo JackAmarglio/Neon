@@ -19,9 +19,9 @@ function App() {
       <PhoneCodeContext.Provider value={codeValue}>
         <Router>
           <Route>
-            <Redirect to="/AvidPrepaid"/>
+            <Redirect to="/"/>
           </Route>
-          <Route exact path="/AvidPrepaid" component={LandingPage} />
+          <Route exact path="/" component={LandingPage} />
         </Router>
       </PhoneCodeContext.Provider>
     </PhoneNumberContext.Provider>

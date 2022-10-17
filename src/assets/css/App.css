@@ -55,6 +55,10 @@ body {
   filter: invert(1);
 }
 
+.footer-input {
+  color: black !important;
+}
+
 h1,
 p {
   font-family: Futura Std Book !important;

@@ -1,8 +1,12 @@
 import Container from "components/Container";
 import { useState } from "react";
 import "../../assets/css/App.css"
+
 const FooterPart = () => {
   const [clientEmail, setClientEmail] = useState("")
+  const [clientName, setClientName] = useState("")
+  const [clientNumber, setClientNumber] = useState("")
+  const [clientCompany, setClientCompany] = useState("")
   return (
     <div className="footer-part">
     <div className="relative px-10" id="contact">
@@ -123,25 +127,25 @@ const FooterPart = () => {
           <div className="flex flex-col">
             <p className="text-black">Name</p>
             <input
-              value={clientEmail}
-              onChange={(e) => setClientEmail(e.target.value)}
-              className="bg-gray-500 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full"
+              value={clientName}
+              onChange={(e) => setClientName(e.target.value)}
+              className="bg-gray-500 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
               ></input>
           </div>
           <div className="flex flex-col">
             <p className="ml-12 text-black">Company Name</p>
             <input
-            value={clientEmail}
-            onChange={(e) => setClientEmail(e.target.value)}
-            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full"
+            value={clientCompany}
+            onChange={(e) => setClientCompany(e.target.value)}
+            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
             ></input>
           </div>
           <div className="flex flex-col">
             <p className="ml-12 text-black">Phone Number</p>
             <input
-            value={clientEmail}
-            onChange={(e) => setClientEmail(e.target.value)}
-            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full"
+            value={clientNumber}
+            onChange={(e) => setClientNumber(e.target.value)}
+            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
             ></input>
           </div>
           <div className="flex flex-col">
@@ -149,7 +153,7 @@ const FooterPart = () => {
             <input
             value={clientEmail}
             onChange={(e) => setClientEmail(e.target.value)}
-            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full"
+            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
             ></input>
           </div>
         </div>

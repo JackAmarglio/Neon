@@ -13,6 +13,8 @@ import {
 import { HiMail } from "react-icons/hi";
 import { useSelector, useDispatch } from "react-redux";
 import Modal from "react-modal";
+import { toast } from "react-toastify"
+
 Modal.setAppElement("#root");
 
 const SignUpForm = (props: any) => {
@@ -59,6 +61,11 @@ const SignUpForm = (props: any) => {
       .then((response: any) => {})
       .catch((err: any) => console.log(err));
   };
+
+  const saveData = () => {
+    toast("Save success");
+    props.onClose()
+  }
 
   return (
     <div className="relative pointer-events-auto w-full max-w-[600px] mt-0 sm:mt-6 h-full sm:h-auto bg-white text-center sm:text-left sm:bg-transparent">
@@ -456,16 +463,14 @@ const SignUpForm = (props: any) => {
               <div className="flex justify-between mt-5">
                 <button
                   className="bg-blue-500 w-[45%] text-white rounded-full py-3 text-[1.2em]"
-                  onClick={() => {
-                  }}
+                  onClick={() => closeModal}
                 >
                   {/* <FaAngleLeft className="mr-2 inline-block" /> */}
                   Cancel
                 </button>
                 <button
                   className="bg-blue-500 w-[45%] text-white rounded-full py-3 text-[1.2em]"
-                  onClick={() => {
-                  }}
+                  onClick={() => saveData}
                 >
                   Save
                   {/* <FaAngleRight className="ml-2 inline-block" /> */}
