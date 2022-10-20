@@ -30,8 +30,19 @@ const SignUpForm = (props: any) => {
   const [lang, setLang] = useState("")
   const [clientPhone, setClientPhone] = useState("");
   const [clientEmail, setClientEmail] = useState("");
-  const [address, setAddress] = useState("")
-
+  const [clientName, setClientName] = useState("")
+  const interpreter = {
+    email,
+    fullName,
+    phoneNumber,
+    experience,
+    lang
+  }
+  const client = {
+    clientEmail,
+    clientPhone,
+    clientName
+  }
   const generateMobileToken = (number: string) => {
     setPhoneNumber(number);
     if (number.length === 10) {
@@ -50,21 +61,26 @@ const SignUpForm = (props: any) => {
     }
   };
 
+  const saveIntperpreterData = () => {
+    axios
+    .post('http//localhost:5000/auth/signup', interpreter)
+    .then(() => {
+      toast("Interpreter data has successfully saved")
+      props.onClose()
+    })
+  }
+
   const closeModal = () => {
     props.onClose();
   };
 
-  const credsPreval = () => {
-    axios
-      .post(`${process.env.REACT_APP_ENDPOINT}/AvidPrepaid/cresPreval`, {
-      })
-      .then((response: any) => {})
-      .catch((err: any) => console.log(err));
-  };
-
   const saveData = () => {
-    toast("Save success");
-    props.onClose()
+    axios
+    .post('http://localhost:5000/auth/client', client)
+    .then(() => {
+      toast("Client Data has successfully saved");
+      props.onClose()
+    })
   }
 
   return (
@@ -455,22 +471,22 @@ const SignUpForm = (props: any) => {
               <p className="mb-4">
                 <strong>{"Name"}</strong>
                 <input
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
+                  value={clientName}
+                  onChange={(e) => setClientName(e.target.value)}
                   className="border-2 border-blue-100 w-full lg:mb-0 mb-[15px] outline-none bg-white text-[#777] text-xl py-[10px] px-4 rounded-full"
                 />
               </p>
               <div className="flex justify-between mt-5">
                 <button
                   className="bg-blue-500 w-[45%] text-white rounded-full py-3 text-[1.2em]"
-                  onClick={() => closeModal}
+                  onClick={() => closeModal()}
                 >
                   {/* <FaAngleLeft className="mr-2 inline-block" /> */}
                   Cancel
                 </button>
                 <button
                   className="bg-blue-500 w-[45%] text-white rounded-full py-3 text-[1.2em]"
-                  onClick={() => saveData}
+                  onClick={() => saveData()}
                 >
                   Save
                   {/* <FaAngleRight className="ml-2 inline-block" /> */}
@@ -580,6 +596,7 @@ const SignUpForm = (props: any) => {
                 <button
                   className="bg-blue-500 w-[150px] text-white rounded-full py-3 text-[1.2em]"
                   onClick={() => {
+                    closeModal()
                   }}
                 >
                   {/* <FaAngleLeft className="mr-2 inline-block" /> */}
@@ -588,6 +605,7 @@ const SignUpForm = (props: any) => {
                 <button
                   className="bg-blue-500 w-[150px] text-white rounded-full py-3 text-[1.2em]"
                   onClick={() => {
+                    saveIntperpreterData()
                   }}
                 >
                   Save

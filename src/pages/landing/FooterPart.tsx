@@ -1,5 +1,7 @@
+import axios from "axios";
 import Container from "components/Container";
 import { useState } from "react";
+import { toast } from "react-toastify";
 import "../../assets/css/App.css"
 
 const FooterPart = () => {
@@ -7,6 +9,21 @@ const FooterPart = () => {
   const [clientName, setClientName] = useState("")
   const [clientNumber, setClientNumber] = useState("")
   const [clientCompany, setClientCompany] = useState("")
+
+  const data = {
+    clientEmail,
+    clientName,
+    clientNumber,
+    clientCompany
+  }
+  const sendClientData = () => {
+    console.log(data, 'data')
+    axios
+    .post("http://localhost:5000/auth/customerData", data)
+    .then(() => {
+      toast("Successfully sent")
+    })
+  }
   return (
     <div className="footer-part">
     <div className="relative px-10" id="contact">
@@ -158,7 +175,7 @@ const FooterPart = () => {
           </div>
         </div>
         <div className="justify-center flex pb-12">
-          <button className="text-black">Save</button>
+          <button className="text-black" onClick={()=> sendClientData()}>Send</button>
         </div>
       </Container>
     </div>
