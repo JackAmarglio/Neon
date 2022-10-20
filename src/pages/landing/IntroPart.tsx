@@ -1,7 +1,6 @@
 // import { useContext } from "react";
 // import InputMask from "react-input-mask";
 import React, { useState } from "react";
-import logo from "assets/image/logo.png";
 import logo_ from "assets/image/logo_.png";
 import Container from "components/Container";
 import "animate.css/animate.min.css";
