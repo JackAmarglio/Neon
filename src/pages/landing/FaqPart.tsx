@@ -84,7 +84,7 @@ const FaqCard = (props: any) => {
 
 const FaqPart = () => {
   return (
-    <div id="faq" className="bg-white relative pb-24 px-10">
+    <div id="faq" className="bg-black text-white relative pb-24 px-10">
       <ScrollAnimation animateOnce={false} animateIn="animate__animated animate__fadeInRight">
         <Container>
           <div className="block relative">

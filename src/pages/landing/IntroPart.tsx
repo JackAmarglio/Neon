@@ -114,13 +114,13 @@ const IntroPart = () => {
           <div className="flex-grow sm:pt-2 lg:pb-0 pb-2.5">
             <ul className="flex flex-row text-right pr-3 sm:pr-0 ml-auto mx-none sm:mx-auto max-w-xs md:max-w-xs font-bold text-white text-base">
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
-                <a href="#about">About</a>
+                <a href="/">About</a>
               </li>
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
-                <a href="#services">Services</a>
+                <a href="/">Services</a>
               </li>
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
-                <a href="#contact">Contact</a>
+                <a href="/">Contact</a>
               </li>
             </ul>
           </div>
@@ -170,8 +170,8 @@ const IntroPart = () => {
         >
           <defs>
             <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-              <stop stopColor="rgb(219 234 254 / 1)" offset="0%"></stop>
-              <stop stopColor="rgb(219 234 254 / 1)" offset="100%"></stop>
+              <stop stopColor="rgb(0 0 0 / 1)" offset="0%"></stop>
+              <stop stopColor="rgb(0 0 0 / 1)" offset="100%"></stop>
             </linearGradient>
           </defs>
           <path

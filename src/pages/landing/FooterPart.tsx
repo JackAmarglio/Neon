@@ -157,6 +157,9 @@ const FooterPart = () => {
             ></input>
           </div>
         </div>
+        <div className="justify-center flex pb-12">
+          <button className="text-black">Save</button>
+        </div>
       </Container>
     </div>
     </div>

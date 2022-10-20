@@ -5,11 +5,11 @@ import aboutImg from "assets/image/ppl-phone-img.png";
 
 const AboutPart = () => {
   return (
-    <div className="bg-blue-100 relative px-10">
+    <div className="bg-black text-white relative px-10">
       <Container>
         {/* <ScrollAnimation animateOnce={true} animateIn="animate__animated animate__fadeInLeft" animatePreScroll={true}> */}
           <div className="w-full pt-6" id="about">
-            <p className="mb-14 py-1 text-left border-l-4 border-blue-500 pl-8 text-base text-gray-600 font-medium leading-8">
+            <p className="mb-14 py-1 text-left border-l-4 border-blue-500 pl-8 text-base font-medium leading-8">
               {/* Avid Prepaid Visa Debit card allows you to get your federal benefits
               up to 6 days early and all other direct deposits up to 2 days early.
               <sup>1</sup> It's digital banking at its best! With no overdraft
@@ -70,7 +70,7 @@ const AboutPart = () => {
           </div>
           </ScrollAnimation> */}
       </Container>
-      <div className="w-full block bg-white mt-6 md:mt-16">
+      <div className="w-full block bg-black mt-6 md:mt-16">
         <div
           className="w-full h-1 relative bg-blue-100 -mb-[2px]"
         >
@@ -85,8 +85,8 @@ const AboutPart = () => {
         >
           <defs>
             <linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0">
-              <stop stopColor="rgb(219 234 254 / 1)" offset="0%"></stop>
-              <stop stopColor="rgb(219 234 254 / 1)" offset="100%"></stop>
+              <stop stopColor="rgb(0 0 0 / 1)" offset="0%"></stop>
+              <stop stopColor="rgb(0 0 0 / 1)" offset="100%"></stop>
             </linearGradient>
           </defs>
           <path
