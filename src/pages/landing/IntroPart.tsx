@@ -156,7 +156,7 @@ const IntroPart = () => {
             {/* <video width="300" height="200" autoPlay muted loop style={{ marginTop: '50px', marginLeft: '30px' }}>
               <source src="/1.webm" type="video/webm" id="logo_video"/>
             </video> */}
-              <img src={logo_} alt="logo" width="100%" />
+              <img src={logo_} alt="logo" width="75%" />
           </div>
         </ScrollAnimation>
       </Container>
