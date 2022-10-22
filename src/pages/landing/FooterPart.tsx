@@ -140,38 +140,42 @@ const FooterPart = () => {
           </p>
           <p>6. Activation fee is waived.</p> */}
         </div>
-        <div className="pb-12 justify-between flex">
-          <div className="flex flex-col">
-            <p className="text-black">Name</p>
-            <input
-              value={clientName}
-              onChange={(e) => setClientName(e.target.value)}
-              className="bg-gray-500 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
+        <div className="main-footer pb-12 flex justify-between">
+          <div className="footer flex md:flex-col">
+            <div className="flex flex-col">
+              <p className="text-black">Name</p>
+              <input
+                value={clientName}
+                onChange={(e) => setClientName(e.target.value)}
+                className="bg-gray-500 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
+                ></input>
+            </div>
+            <div className="flex flex-col">
+              <p className="ml-12 text-black md: ml-0">Company Name</p>
+              <input
+              value={clientCompany}
+              onChange={(e) => setClientCompany(e.target.value)}
+              className="company bg-gray-500 ml-10 w-[full] md:ml-0 lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
               ></input>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <p className="ml-12 text-black">Company Name</p>
-            <input
-            value={clientCompany}
-            onChange={(e) => setClientCompany(e.target.value)}
-            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
-            ></input>
-          </div>
-          <div className="flex flex-col">
-            <p className="ml-12 text-black">Phone Number</p>
-            <input
-            value={clientNumber}
-            onChange={(e) => setClientNumber(e.target.value)}
-            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
-            ></input>
-          </div>
-          <div className="flex flex-col">
-            <p className="ml-12 text-black ">Email</p>
-            <input
-            value={clientEmail}
-            onChange={(e) => setClientEmail(e.target.value)}
-            className="bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
-            ></input>
+          <div className="footer flex md:flex-col">
+            <div className="flex flex-col">
+              <p className="phone ml-12 text-black">Phone Number</p>
+              <input
+              value={clientNumber}
+              onChange={(e) => setClientNumber(e.target.value)}
+              className="phone_input bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
+              ></input>
+            </div>
+            <div className="flex flex-col">
+              <p className="email ml-12 text-black ">Email</p>
+              <input
+              value={clientEmail}
+              onChange={(e) => setClientEmail(e.target.value)}
+              className="email_input bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
+              ></input>
+            </div>
           </div>
         </div>
         <div className="justify-center flex pb-12">

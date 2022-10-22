@@ -37,8 +37,41 @@ body {
   background-color: rgb(154, 109, 104);
 }
 
+.hamburger {
+  background-color: rgb(154, 109, 104);
+}
+
 .footer-part {
   background-color: rgb(154, 109, 104);
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .company {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-footer .phone {
+    margin-left: 0;
+  }
+  .main-footer .phone_input {
+    margin-left: 0;
+  }
+  .main-footer .email {
+    margin-left: 0;
+  }
+  .main-footer .email_input {
+    margin-left: 0;
+  }
 }
 
 .landing-header::after,

@@ -7,6 +7,7 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import SignUpForm from './SignUpForm';
 import Modal from 'react-modal';
+import hamburger from "assets/image/hamburger.png"
 Modal.setAppElement('#root');
 
 const IntroPart = () => {
@@ -123,6 +124,7 @@ const IntroPart = () => {
               </li>
             </ul>
           </div>
+          <img src={hamburger} alt="" className="hamburger"/>
           <div className="text-center">
             <div onClick={openModal} className="hidden md:block" id="getStarted" >
               <div className="text-blue-500 inline-block btn bg-white">
