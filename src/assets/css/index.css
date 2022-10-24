@@ -67,11 +67,11 @@ ul {
 }
 
 .nav-scroll ul li {
-  @apply text-blue-500;
+  @apply text-black;
 }
 
 .nav-scroll .btn {
-  @apply bg-blue-500 text-white;
+  @apply bg-black text-white;
 }
 
 #disclosures * {

@@ -114,19 +114,19 @@ const IntroPart = () => {
           <div className="flex-grow sm:pt-2 lg:pb-0 pb-2.5 navbar">
             <ul className="flex flex-row text-right pr-3 sm:pr-0 ml-auto mx-none sm:mx-auto max-w-xs md:max-w-xs font-bold text-white text-base">
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
-                <a href="/">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
-                <a href="/">Services</a>
+                <a href="#services">Services</a>
               </li>
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
-                <a href="/">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
           <div className="text-center sm: ml-auto">
             <div onClick={openModal} className="" id="getStarted" >
-              <div className="text-blue-500 inline-block btn bg-white">
+              <div className="text-black inline-block btn bg-white">
                 Apply
               </div>
             </div>
