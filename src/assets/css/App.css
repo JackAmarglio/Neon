@@ -55,6 +55,12 @@ body {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .main-footer {
     display: flex;
@@ -125,6 +131,15 @@ p {
 
 .landing-footer {
   color: #1d2127;
+}
+
+@media only screen and (max-width : 425px) {
+  .landing-footer {
+    flex-direction: column;
+  }
+  .support {
+    margin-top: 30px;
+  }
 }
 
 .landing-footer > p {

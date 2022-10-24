@@ -40,7 +40,7 @@ const FooterPart = () => {
             <a href="https://neon-languages@neon-l.com" className="text-xl">neon-languages@neon-l.com</a>
           </div>
           <p>
-            <p className="text-2xl">Support team email</p>
+            <p className="text-2xl support">Support team email</p>
             <br />
             <a href="https://teamsupport@neon-l.com" className="text-xl">teamsupport@neon-l.com</a>
           </p>

@@ -103,15 +103,15 @@ const IntroPart = () => {
           <div className="text-center w-full flex sm:block sm:w-auto md:text-left pb-4 sm:pb-2 md:pb-0">
             <p className="text-2xl text-black"> NEON-L </p>
             <p className="text-2xl text-black">Languages</p>
-            <div className="flex-grow text-right">
+            {/* <div className="flex-grow text-right">
               <div onClick={openModal} className="block sm:hidden scale-90 origin-right	mt-0.5" >
                 <div className="text-blue-500 inline-block btn bg-white -mt-[4px]">
                   Apply
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="flex-grow sm:pt-2 lg:pb-0 pb-2.5">
+          <div className="flex-grow sm:pt-2 lg:pb-0 pb-2.5 navbar">
             <ul className="flex flex-row text-right pr-3 sm:pr-0 ml-auto mx-none sm:mx-auto max-w-xs md:max-w-xs font-bold text-white text-base">
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
                 <a href="/">About</a>
@@ -124,9 +124,8 @@ const IntroPart = () => {
               </li>
             </ul>
           </div>
-          <img src={hamburger} alt="" className="hamburger"/>
-          <div className="text-center">
-            <div onClick={openModal} className="hidden md:block" id="getStarted" >
+          <div className="text-center sm: ml-auto">
+            <div onClick={openModal} className="" id="getStarted" >
               <div className="text-blue-500 inline-block btn bg-white">
                 Apply
               </div>
