@@ -264,11 +264,10 @@ p {
   right: -35px;
   bottom: -12px;
   transform: rotate(-90deg);
-  background-color: transparent;
+  background-color: black;
   height: 3rem;
   width: 1.5rem;
   border-top-left-radius: 1.5rem;
-  box-shadow: 0 -1.5rem 0 0 white;
   @apply hidden sm:block;
 }
 

@@ -84,7 +84,7 @@ const SignUpForm = (props: any) => {
   }
 
   return (
-    <div className="relative pointer-events-auto w-full max-w-[600px] mt-0 sm:mt-6 h-full sm:h-auto bg-white text-center sm:text-left sm:bg-transparent">
+    <div className="relative pointer-events-auto w-full max-w-[600px] mt-0 sm:mt-6 h-full sm:h-auto bg-black text-center sm:text-left">
       <Modal
         isOpen={shortForm}
         shouldCloseOnOverlayClick={true}
@@ -392,19 +392,19 @@ const SignUpForm = (props: any) => {
         </p>
       </Modal>
       <div className="p-6 sm:p-0 sm:pb-20 sm:mb-0 mb-8">
-        <div className="contact-tab-header text-sm sm:text-base bg-white border-b-2 sm:border-b-0 border-blue-100 sm:bg-transparent fixed top-0 sm:relative z-[9999] sm:w-auto flex pt-8 sm:pt-0 pb-2 sm:pb-0">
+        <div className="bg-transparent contact-tab-header text-sm sm:text-base bg-white border-b-2 sm:border-b-0 border-blue-100 sm:fixed top-0 sm:relative z-[9999] sm:w-auto flex pt-8 sm:pt-0 pb-2 sm:pb-0">
           <div
             onClick={() => setTab(3)}
-            className={`cursor-pointer font-bold sm:bg-white px-4 pl-0 sm:pl-6 sm:px-6 py-4 rounded-tl-3xl ${
-              tab === 3 ? "text-blue-500" : "text-gray-600"
+            className={`bg-black cursor-pointer font-bold sm:px-4 pl-0 sm:pl-6 sm:px-6 py-4 rounded-tl-3xl ${
+              tab === 3 ? "text-white" : "text-gray-600"
             }`}
           >
             <p>Interpreter</p>
           </div>
           <div
             onClick={() => setTab(1)}
-            className={`cursor-pointer font-bold sm:bg-white px-4 sm:px-6 py-4 sm:pl-0 rounded-tr-3xl ${
-              tab === 1 ? "text-blue-500" : "text-gray-600"
+            className={`cursor-pointer bg-black font-bold sm:px-4 sm:px-6 py-4 sm:pl-0 rounded-tr-3xl ${
+              tab === 1 ? "text-white" : "text-gray-600"
             }`}
           >
             <p>Client</p>
@@ -430,7 +430,7 @@ const SignUpForm = (props: any) => {
             </p>
           </div>
         </div>
-        <div className="contact-tab-body text-left relative sm:shadow-2xl pt-24 sm:p-6 bg-white">
+        <div className="bg-black text-white contact-tab-body text-left relative sm:shadow-2xl pt-24 sm:p-6">
           <div
             className={`flex md:flex-row flex-col ${
               tab === 1 ? "opacity-100 block" : "opacity-0 hidden"
@@ -453,7 +453,7 @@ const SignUpForm = (props: any) => {
                 <span className="ml-3 text-base">
                   <a
                     href="tel:(801) 893-7716"
-                    className="text-[#0386ff] hover:underline"
+                    className="text-white hover:underline"
                     target="_blank"
                     rel="noreferrer"
                   >
