@@ -25,7 +25,7 @@ const SupportPart = () => {
                 Customer Support Without The Wait
               </h1> */}
               <h1 className="font-bold md:text-4xl text-2xl leading-6">
-                Providing Over the phone interpretation (Capitol) 
+                Providing Over the phone interpretation 
               </h1>
               <h3 className="mt-2 mb-5 font-medium md:text-2xl text-xl">
                 Award Winning Support
