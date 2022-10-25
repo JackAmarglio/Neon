@@ -403,7 +403,7 @@ const SignUpForm = (props: any) => {
           </div>
           <div
             onClick={() => setTab(1)}
-            className={`cursor-pointer bg-black font-bold sm:px-4 sm:px-6 py-4 sm:pl-0 rounded-tr-3xl ${
+            className={`cursor-pointer bg-black font-bold sm:px-4 sm:px-6 py-4 sm:pl-0 rounded-tr-3xl client ${
               tab === 1 ? "text-white" : "text-gray-600"
             }`}
           >

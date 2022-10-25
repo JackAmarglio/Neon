@@ -271,6 +271,12 @@ p {
   @apply hidden sm:block;
 }
 
+@media only screen and (max-width: 640px) {
+  .client {
+    margin-left: 10px;
+  }
+}
+
 .contact-tab-header > div {
   width: fit-content;
   margin-bottom: -1px;
