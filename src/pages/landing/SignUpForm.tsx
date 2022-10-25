@@ -36,12 +36,14 @@ const SignUpForm = (props: any) => {
     fullName,
     phoneNumber,
     experience,
-    lang
+    lang,
+    type: 'interpreter'
   }
   const client = {
     clientEmail,
     clientPhone,
-    clientName
+    clientName,
+    type: 'client'
   }
   const generateMobileToken = (number: string) => {
     setPhoneNumber(number);

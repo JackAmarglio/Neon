@@ -15,9 +15,10 @@ const FooterPart = () => {
     clientName,
     clientNumber,
     clientCompany,
+    type: "customer"
   };
   const sendClientData = () => {
-    axios.post("http://localhost:5000/auth/customerData", data).then(() => {
+    axios.post("http://localhost:5000/neon-data", data).then(() => {
       toast("Successfully sent");
     });
   };
