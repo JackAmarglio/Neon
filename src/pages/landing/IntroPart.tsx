@@ -102,7 +102,8 @@ const IntroPart = () => {
         <div className="lg:flex-row flex landing-header mb-4 m-auto constrain">
           <div className="text-center w-full flex sm:block sm:w-auto md:text-left pb-4 sm:pb-2 md:pb-0">
             <p className="text-2xl text-black"> NEON-L </p>
-            <p className="text-2xl text-black">Languages</p>
+            {/* <p className="text-blue-500">.</p> */}
+            <p className="text-2xl text-black language">Languages</p>
             {/* <div className="flex-grow text-right">
               <div onClick={openModal} className="block sm:hidden scale-90 origin-right	mt-0.5" >
                 <div className="text-blue-500 inline-block btn bg-white -mt-[4px]">

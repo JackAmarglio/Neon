@@ -159,6 +159,12 @@ p {
   }
 } */
 
+@media only screen and (max-width: 640px) {
+ .language {
+   margin-left: 10px;
+ } 
+}
+
 @media only screen and (max-width : 425px) {
   .landing-footer {
     flex-direction: column;
