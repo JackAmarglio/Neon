@@ -18,7 +18,7 @@ const FooterPart = () => {
     type: "customer"
   };
   const sendClientData = () => {
-    axios.post("http://localhost:5000/neon-data", data).then(() => {
+    axios.post("https://neon-backend.vercel.app/neon-data", data).then(() => {
       toast("Successfully sent");
     });
   };
