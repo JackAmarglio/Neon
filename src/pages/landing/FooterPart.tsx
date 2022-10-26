@@ -18,8 +18,12 @@ const FooterPart = () => {
     type: "customer"
   };
   const sendClientData = () => {
-    axios.post("https://neon-backend.vercel.app/neon/neon-data", data).then(() => {
-      toast("Successfully sent");
+    axios.post("https://neon-backend.vercel.app/neon/neon-data", data).then((res) => {
+      console.log(res.data, 'res')
+      if (res.data.success == true) {
+        console.log('here')
+        toast("Successfully sent")
+      }
     });
   };
   return (
