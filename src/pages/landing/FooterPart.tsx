@@ -44,6 +44,13 @@ const FooterPart = () => {
                 teamsupport@neon-l.com
               </a>
             </p>
+            <div>
+              <p className="text-2xl">Company Number</p>
+              <br />
+              <a href="" className="text-xl">
+                8609997073
+              </a>
+            </div>
           </div>
           <div className="main-footer pb-12 flex justify-between">
             <div className="footer flex md:flex-col">
