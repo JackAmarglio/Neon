@@ -21,7 +21,9 @@ const FooterPart = () => {
     type: "customer"
   };
   const sendClientData = () => {
-    console.log(phone, 'phone')
+    if (email == "" || name == "" || phone == "" || company == "") {
+      alert("fill all data")
+    }
     isValidPhoneNumber(phone) ? 
     axios.post("https://neon-backend.vercel.app/neon/neon-data", data).then((res) => {
       console.log(res.data, 'res')
@@ -101,7 +103,7 @@ const FooterPart = () => {
             </div>
           </div>
           <div className="justify-center flex pb-12">
-            <button className="text-black" onClick={() => sendClientData()}>
+            <button className="border border-black rounded-full w-[100px] bg-black text-white" onClick={() => sendClientData()}>
               Send
             </button>
           </div>
