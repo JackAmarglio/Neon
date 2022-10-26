@@ -41,7 +41,7 @@ const SupportPart = () => {
               </p>
               <br />
               <p className="text-base leading-8 mb-5 m-0">
-                Supporting a large network, Neon has extended its service to health, legal, businesses and corporations
+                Supporting a large network, Neon-L has extended its service to health, legal, businesses and corporations
               </p>
               {/* <ul className="list-disc text-base text-gray-600 leading-8 pl-5 mb-8">
                 <li>

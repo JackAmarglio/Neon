@@ -16,10 +16,10 @@ const AboutPart = () => {
               fees or minimum balance requirement,<sup>2</sup> you always have
               control over your account. Getting started is easy, just enter your
               mobile number and click "Let's Get Started" to sign up today! */}
-                A company built  based on the needs of the costumer Neon-L brings a new era, a place of innovative experience, with the ability to make choices that matter With the efficiency and the collaboration of our team you have the ability to create a fast paced telephonic interpretation session for you.
+                A company built  based on the needs of the costumer Neon-L brings a new era, a place of innovative experience, with the ability to make choices that matter. With the efficiency and the collaboration of our team you have the ability to create a fast paced telephonic interpretation session for you.
                 Our company has worked hard to create a conclusive system that gives the right to our costumers to become our clients or use our services without commitment.
-                We serve clients and guests similarly, with the need to create a faster and more advanced system of communication
-                Neon-L was founded in Connecticut, USA, and its looking to rise above the limitations of other traditional language service companies, giving the flexibility to place an OPI call on your own time and based on your needs
+                We serve clients and guests similarly, with the need to create a faster and more advanced system of communication.
+                Neon-L was founded in Connecticut, USA, and its looking to rise above the limitations of other traditional language service companies, giving the flexibility to place an OPI call on your own time and based on your needs.
             </p>
           </div>
         {/* </ScrollAnimation> */}

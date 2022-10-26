@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a779cb78.css",
+    "main.js": "/static/js/main.28c37e4a.js",
+    "static/js/787.c7c58086.chunk.js": "/static/js/787.c7c58086.chunk.js",
+    "static/media/service-img.png": "/static/media/service-img.8af5d5b58a4b7c05df0b.png",
+    "static/media/logo_.png": "/static/media/logo_.b059c4543b9507e819e3.png",
+    "static/media/FontsFree-Net-FuturaStd-Book.ttf": "/static/media/FontsFree-Net-FuturaStd-Book.06d93cb897eedab9b21b.ttf",
+    "static/media/FuturaStdBook.otf": "/static/media/FuturaStdBook.5f83b0049a36e35d2265.otf",
+    "static/media/early-access-icon.png": "/static/media/early-access-icon.b87f4e126dea3fe4310d.png",
+    "index.html": "/index.html",
+    "main.a779cb78.css.map": "/static/css/main.a779cb78.css.map",
+    "main.28c37e4a.js.map": "/static/js/main.28c37e4a.js.map",
+    "787.c7c58086.chunk.js.map": "/static/js/787.c7c58086.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a779cb78.css",
+    "static/js/main.28c37e4a.js"
+  ]
+}
