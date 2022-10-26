@@ -65,7 +65,7 @@ const SignUpForm = (props: any) => {
 
   const saveIntperpreterData = () => {
     axios
-    .post('https://neon-backend.vercel.app/neon-data', interpreter)
+    .post('https://neon-backend.vercel.app/neon/neon-data', interpreter)
     .then(() => {
       toast("Interpreter data has successfully saved")
       props.onClose()
@@ -78,7 +78,7 @@ const SignUpForm = (props: any) => {
 
   const saveData = () => {
     axios
-    .post('https://neon-backend.vercel.app/neon-data', client)
+    .post('https://neon-backend.vercel.app/neon/neon-data', client)
     .then(() => {
       toast("Client Data has successfully saved");
       props.onClose()

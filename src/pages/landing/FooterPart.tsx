@@ -5,20 +5,20 @@ import { toast } from "react-toastify";
 import "../../assets/css/App.css";
 
 const FooterPart = () => {
-  const [clientEmail, setClientEmail] = useState("");
-  const [clientName, setClientName] = useState("");
-  const [clientNumber, setClientNumber] = useState("");
-  const [clientCompany, setClientCompany] = useState("");
+  const [email, setClientEmail] = useState("");
+  const [name, setClientName] = useState("");
+  const [phone, setClientNumber] = useState("");
+  const [company, setClientCompany] = useState("");
 
   const data = {
-    clientEmail,
-    clientName,
-    clientNumber,
-    clientCompany,
+    email,
+    name,
+    phone,
+    company,
     type: "customer"
   };
   const sendClientData = () => {
-    axios.post("https://neon-backend.vercel.app/neon-data", data).then(() => {
+    axios.post("https://neon-backend.vercel.app/neon/neon-data", data).then(() => {
       toast("Successfully sent");
     });
   };
@@ -57,7 +57,7 @@ const FooterPart = () => {
               <div className="flex flex-col">
                 <p className="text-black">Name</p>
                 <input
-                  value={clientName}
+                  value={name}
                   onChange={(e) => setClientName(e.target.value)}
                   className="bg-gray-500 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>
@@ -65,7 +65,7 @@ const FooterPart = () => {
               <div className="flex flex-col">
                 <p className="ml-12 text-black md: ml-0">Company Name</p>
                 <input
-                  value={clientCompany}
+                  value={company}
                   onChange={(e) => setClientCompany(e.target.value)}
                   className="company bg-gray-500 ml-10 w-[full] md:ml-0 lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>
@@ -75,7 +75,7 @@ const FooterPart = () => {
               <div className="flex flex-col">
                 <p className="phone ml-12 text-black">Phone Number</p>
                 <input
-                  value={clientNumber}
+                  value={phone}
                   onChange={(e) => setClientNumber(e.target.value)}
                   className="phone_input bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>
@@ -83,7 +83,7 @@ const FooterPart = () => {
               <div className="flex flex-col">
                 <p className="email ml-12 text-black ">Email</p>
                 <input
-                  value={clientEmail}
+                  value={email}
                   onChange={(e) => setClientEmail(e.target.value)}
                   className="email_input bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>
