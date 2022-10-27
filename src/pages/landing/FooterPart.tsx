@@ -1,6 +1,6 @@
 import axios from "axios";
 import Container from "components/Container";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "../../assets/css/App.css";
@@ -10,6 +10,12 @@ import { isValidPhoneNumber } from 'react-phone-number-input'
 
 const FooterPart = () => {
 
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
   const [email, setClientEmail] = useState("");
   const [name, setClientName] = useState("");
   const [phone, setClientNumber] = useState("");
@@ -21,15 +27,7 @@ const FooterPart = () => {
     company,
     type: "customer"
   };
-  
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-
   const sendClientData = () => {
-    if (email && name && phone && company == "") {
-      alert("fill all data")
-    }
     if (email == "") {
       alert("fill email")
     }
@@ -42,7 +40,7 @@ const FooterPart = () => {
     if (company == "") {
       alert("fill company")
     }
-    isValidPhoneNumber(phone) ? isValidEmail(email) ? 
+    isValidPhoneNumber(phone) ? 
     axios.post("https://neon-backend.vercel.app/neon/neon-data", data).then((res) => {
       if (res.data.success == true) {
         alert("Successfully sent")
@@ -51,12 +49,8 @@ const FooterPart = () => {
         setClientCompany("")
         setClientNumber("")
       }
-    }) : alert("invalid Email") : alert("invalid Phone Number")
-  }
-
-  const isValidEmail = (email: string) => {
-    return /\S+@\S+\.\S+/.test(email);
-  }
+    }) : alert("invalid phone number")
+  };
   return (
     <div className="footer-part">
       <div className="relative px-10" id="contact">

@@ -13,6 +13,7 @@ import ServicePart from "./ServicePart";
 import SupportPart from "./SupportPart";
 
 const LandingPage = () => {
+  
   return (
     <div>
       <IntroPart />
