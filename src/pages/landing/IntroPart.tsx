@@ -12,6 +12,13 @@ Modal.setAppElement('#root');
 
 const IntroPart = () => {
 
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
+
   window.onscroll = function() { scrollWatcher() };
 
   function controlNavVisibility (state: boolean) {

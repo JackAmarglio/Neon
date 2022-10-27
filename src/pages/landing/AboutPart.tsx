@@ -4,6 +4,13 @@ import Container from "components/Container";
 import aboutImg from "assets/image/ppl-phone-img.png";
 
 const AboutPart = () => {
+
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
   return (
     <div className="bg-black text-white relative px-10">
       <Container>

@@ -9,6 +9,13 @@ import PhoneInput from 'react-phone-number-input/input'
 import { isValidPhoneNumber } from 'react-phone-number-input'
 
 const FooterPart = () => {
+
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
   const [email, setClientEmail] = useState("");
   const [name, setClientName] = useState("");
   const [phone, setClientNumber] = useState("");
@@ -21,15 +28,26 @@ const FooterPart = () => {
     type: "customer"
   };
   const sendClientData = () => {
-    if (email == "" || name == "" || phone == "" || company == "") {
-      alert("fill all data")
+    if (email == "") {
+      alert("fill email")
+    }
+    if (name == "") {
+      alert("fill name")
+    }
+    if (phone == "") {
+      alert("fill phone")
+    }
+    if (company == "") {
+      alert("fill company")
     }
     isValidPhoneNumber(phone) ? 
     axios.post("https://neon-backend.vercel.app/neon/neon-data", data).then((res) => {
-      console.log(res.data, 'res')
       if (res.data.success == true) {
-        console.log('here')
         alert("Successfully sent")
+        setClientEmail("");
+        setClientName("")
+        setClientCompany("")
+        setClientNumber("")
       }
     }) : alert("invalid phone number")
   };
@@ -70,6 +88,7 @@ const FooterPart = () => {
                 <input
                   value={name}
                   onChange={(e) => setClientName(e.target.value)}
+                  required
                   className="bg-gray-500 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>
               </div>
@@ -78,6 +97,7 @@ const FooterPart = () => {
                 <input
                   value={company}
                   onChange={(e) => setClientCompany(e.target.value)}
+                  required
                   className="company bg-gray-500 ml-10 w-[full] md:ml-0 lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>
               </div>
@@ -88,6 +108,7 @@ const FooterPart = () => {
                 <PhoneInput
                   placeholder="Enter phone number"
                   value={phone}
+                  required
                   className="phone_input bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                   onChange={(e:any) => setClientNumber(e)}
                 />
@@ -96,6 +117,7 @@ const FooterPart = () => {
                 <p className="email ml-12 text-black ">Email</p>
                 <input
                   value={email}
+                  required
                   onChange={(e) => setClientEmail(e.target.value)}
                   className="email_input bg-gray-500 ml-10 w-[full] lg:mb-0 mb-[15px] outline-none text-[#777] text-xl py-[10px] px-4 rounded-full footer-input"
                 ></input>

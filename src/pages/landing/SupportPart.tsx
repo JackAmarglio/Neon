@@ -5,6 +5,13 @@ import supportImg from "assets/image/service-img.png";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SupportPart = () => {
+
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
   return (
     <div className="landing-support bg-black text-white pt-14 pb-4 px-10" id="services">
       <ScrollAnimation animateOnce={true} animateIn="animate__animated animate__fadeInLeft">

@@ -83,6 +83,13 @@ const FaqCard = (props: any) => {
 };
 
 const FaqPart = () => {
+
+  if (window.performance) {
+    if (performance.navigation.type == 1) {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }
   return (
     <div id="faq" className="bg-black text-white relative pb-24 px-10">
       <ScrollAnimation animateOnce={false} animateIn="animate__animated animate__fadeInRight">
