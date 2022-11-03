@@ -1,12 +1,13 @@
 import axios from "axios";
 import Container from "components/Container";
 import { useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "../../assets/css/App.css";
 import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input/input'
 import { isValidPhoneNumber } from 'react-phone-number-input'
+
 
 const FooterPart = () => {
 
@@ -30,6 +31,8 @@ const FooterPart = () => {
   const sendClientData = () => {
     if (email == "") {
       alert("fill email")
+      toast("fill email");
+      return <ToastContainer />
     }
     if (name == "") {
       alert("fill name")
@@ -114,7 +117,7 @@ const FooterPart = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="email ml-12 text-black ">Email</p>
+                <p className="email ml-12 text-black">Email</p>
                 <input
                   value={email}
                   required
