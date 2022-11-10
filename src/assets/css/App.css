@@ -34,7 +34,7 @@ body {
 }
 
 .landing-intro {
-  background-color: rgb(154, 109, 104);
+  background-image: url("assets/image/bg.png");
 }
 
 .hamburger {
@@ -42,7 +42,7 @@ body {
 }
 
 .footer-part {
-  background-color: rgb(154, 109, 104);
+  background-image: url("assets/image/footer.png");
 }
 
 @media screen and (max-width: 768px) {
