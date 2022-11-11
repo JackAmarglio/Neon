@@ -60,23 +60,23 @@ const FooterPart = () => {
           </div>
           <div className="flex justify-between pt-10 pb-12 landing-footer">
             <div>
-              <p className="text-2xl text-white">Main email</p>
+              <p className="text-2xl text-white font-bold">Main email</p>
               <br />
-              <a href="https://neon-languages@neon-l.com" className="text-xl text-white">
+              <a href="https://neon-languages@neon-l.com" className="text-xl text-white font-bold">
                 neon-languages@neon-l.com
               </a>
             </div>
             <p>
-              <p className="text-2xl support text-white">Support team email</p>
+              <p className="text-2xl support text-white font-bold">Support team email</p>
               <br />
-              <a href="https://teamsupport@neon-l.com" className="text-xl text-white">
+              <a href="https://teamsupport@neon-l.com" className="text-xl text-white font-bold">
                 teamsupport@neon-l.com
               </a>
             </p>
             <div>
-              <p className="text-2xl text-white">Interpreter Line</p>
+              <p className="text-2xl text-white font-bold">Interpreter Line</p>
               <br />
-              <a href="" className="text-xl text-white">
+              <a href="" className="text-xl text-white font-bold">
                 (860)-935-2645
               </a>
             </div>
@@ -84,7 +84,7 @@ const FooterPart = () => {
           <div className="main-footer pb-12 flex justify-between">
             <div className="footer flex md:flex-col">
               <div className="flex flex-col">
-                <p className="text-white">Name</p>
+                <p className="text-white font-bold">Name</p>
                 <input
                   value={name}
                   onChange={(e) => setClientName(e.target.value)}
@@ -93,7 +93,7 @@ const FooterPart = () => {
                 ></input>
               </div>
               <div className="flex flex-col">
-                <p className="ml-12 text-white md: ml-0">Company Name</p>
+                <p className="ml-12 text-white font-bold md: ml-0">Company Name</p>
                 <input
                   value={company}
                   onChange={(e) => setClientCompany(e.target.value)}
@@ -104,7 +104,7 @@ const FooterPart = () => {
             </div>
             <div className="footer flex md:flex-col">
               <div className="flex flex-col">
-                <p className="phone text-white">Phone Number</p>
+                <p className="phone text-white font-bold">Phone Number</p>
                 <PhoneInput
                   placeholder="Enter phone number"
                   value={phone}
@@ -114,7 +114,7 @@ const FooterPart = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="email text-white">Email</p>
+                <p className="email text-white font-bold">Email</p>
                 <input
                   value={email}
                   required

@@ -34,7 +34,7 @@ body {
 }
 
 .landing-intro {
-  background-image: url("assets/image/bg.png");
+  background: black;
 }
 
 .hamburger {
@@ -43,6 +43,7 @@ body {
 
 .footer-part {
   background-image: url("assets/image/footer.png");
+  background-size: cover;
 }
 
 @media screen and (max-width: 768px) {
