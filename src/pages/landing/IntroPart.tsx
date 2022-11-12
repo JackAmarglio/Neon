@@ -144,7 +144,7 @@ const IntroPart = () => {
       <Container>
         {/* <p className="text-5xl text-center mt-20 text-red-500">Welcome to visit our company</p> */}
         <ScrollAnimation animateOnce={false} animateIn="animate__animated animate__fadeInLeft" animatePreScroll={true} delay={400}>
-          <div className="flex items-center w-[full] justify-center text-white pb-24 md:pb-16 pt-10">
+          <div className="flex items-center w-[full] justify-center text-white pb-24 md:pb-16 pt-[6.5rem]">
           {/* <ScrollAnimation animateOnce={true} animateIn="animate__animated animate__fadeInLeft" animatePreScroll={true} delay={400}>
             <div>
               <h1 style={{textShadow: '3px 3px 10px rgba(0,0,0,0.2)'}} className="leading-[1.13] text-[3rem] sm:text-[3.75rem] md:text-[4.5rem] ">
