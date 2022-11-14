@@ -34,7 +34,7 @@ const SupportPart = () => {
               <h1 className="font-bold text-3xl leading-6">
                 Providing Over The Phone Interpretation 
               </h1>
-              <p className="mt-12 mb-5 text-base text-2xl leading-8 mb-5 m-0">
+              <p className="mt-12 mb-5 text-2xl leading-8 mb-5 m-0">
                 {/* Are you tired of trying to speak with someone, but having to
                 wait on the phone to clear up? We know it can be frustrating,
                 that’s why the Avid Prepaid team makes it a point to have your
@@ -44,7 +44,7 @@ const SupportPart = () => {
                 Neon-Languages  is found is Connecticut , an experienced language service provider with leading interpreters with over 10 years of experience 
               </p>
               <br />
-              <p className="text-base text-2xl leading-8 mb-5 m-0">
+              <p className="text-2xl leading-8 mb-5 m-0">
                 Supporting a large network, Neon-L has extended its service to health, legal, businesses and corporations
               </p>
               {/* <ul className="list-disc text-base text-gray-600 leading-8 pl-5 mb-8">

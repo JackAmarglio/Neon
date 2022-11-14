@@ -16,7 +16,7 @@ const AboutPart = () => {
       <Container>
         {/* <ScrollAnimation animateOnce={true} animateIn="animate__animated animate__fadeInLeft" animatePreScroll={true}> */}
           <div className="w-full pt-6" id="about">
-            <p className="mb-14 text-2xl py-1 text-left border-l-4 border-blue-500 pl-8 text-base font-medium leading-8">
+            <p className="mb-14 text-2xl py-1 text-left border-l-4 border-blue-500 pl-8 font-medium leading-8">
               {/* Avid Prepaid Visa Debit card allows you to get your federal benefits
               up to 6 days early and all other direct deposits up to 2 days early.
               <sup>1</sup> It's digital banking at its best! With no overdraft
