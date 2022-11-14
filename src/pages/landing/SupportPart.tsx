@@ -1,7 +1,7 @@
 import Container from "components/Container";
 import React from "react";
 
-import supportImg from "assets/image/service-img.png";
+import supportImg from "assets/image/service-img.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SupportPart = () => {
@@ -31,13 +31,10 @@ const SupportPart = () => {
               {/* <h1 className="text-blue-500 font-bold md:text-4xl text-2xl leading-6">
                 Customer Support Without The Wait
               </h1> */}
-              <h1 className="font-bold md:text-4xl text-2xl leading-6">
+              <h1 className="font-bold md:text-4xl text-3xl leading-6">
                 Providing Over The Phone Interpretation 
               </h1>
-              <h3 className="mt-2 mb-5 font-medium md:text-2xl text-xl">
-                Award Winning Support
-              </h3>
-              <p className="text-base leading-8 mb-5 m-0">
+              <p className="mt-12 mb-5 text-base text-3xl leading-8 mb-5 m-0">
                 {/* Are you tired of trying to speak with someone, but having to
                 wait on the phone to clear up? We know it can be frustrating,
                 that’s why the Avid Prepaid team makes it a point to have your
@@ -47,7 +44,7 @@ const SupportPart = () => {
                 Neon-Languages  is found is Connecticut , an experienced language service provider with leading interpreters with over 10 years of experience 
               </p>
               <br />
-              <p className="text-base leading-8 mb-5 m-0">
+              <p className="text-base text-3xl leading-8 mb-5 m-0">
                 Supporting a large network, Neon-L has extended its service to health, legal, businesses and corporations
               </p>
               {/* <ul className="list-disc text-base text-gray-600 leading-8 pl-5 mb-8">

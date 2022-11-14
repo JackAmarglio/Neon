@@ -8,6 +8,8 @@ import 'react-phone-number-input/style.css'
 import PhoneInput from 'react-phone-number-input/input'
 import { isValidPhoneNumber } from 'react-phone-number-input'
 
+const base_url = process.env.REACT_APP_BASE_URL;
+
 const FooterPart = () => {
 
   if (window.performance) {
@@ -41,7 +43,7 @@ const FooterPart = () => {
       alert("fill company")
     }
     isValidPhoneNumber(phone) ? 
-    axios.post("localhost:5000/neon/neon-data", data).then((res) => {
+    axios.post(`${base_url}/neon/neon-data`, data).then((res) => {
       if (res.data.success == true) {
         alert("Successfully sent")
         setClientEmail("");
