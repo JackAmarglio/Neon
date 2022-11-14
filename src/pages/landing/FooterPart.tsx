@@ -65,6 +65,9 @@ const FooterPart = () => {
           setClientNumber("");
         }
         setLoading("");
+      }).catch((e) => {
+        console.log(e)
+        setLoading("");
       });
     } else {
       toast.error("Invalid phone number");
