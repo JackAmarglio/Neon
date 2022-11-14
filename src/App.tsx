@@ -6,6 +6,8 @@ import { LandingPage } from "pages";
 import PhoneNumberContext from "context/PhoneNumber";
 import PhoneCodeContext from "context/PhoneCode";
 
+import { ToastContainer } from 'react-toastify';
+
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const phoneValue = useMemo(
@@ -23,6 +25,18 @@ function App() {
           </Route>
           <Route exact path="/" component={LandingPage} />
         </Router>
+        <ToastContainer 
+          // position="top-right"
+          // autoClose={2000}
+          // hideProgressBar={false}
+          // newestOnTop={false}
+          // closeOnClick
+          // rtl={false}
+          // pauseOnFocusLoss
+          // draggable
+          // pauseOnHover
+          // theme="colored"
+        />
       </PhoneCodeContext.Provider>
     </PhoneNumberContext.Provider>
   );

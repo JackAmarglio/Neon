@@ -1,16 +1,17 @@
 import axios from "axios";
 import Container from "components/Container";
 import { useState } from "react";
-import 'react-toastify/dist/ReactToastify.css';
+import "react-toastify/dist/ReactToastify.css";
 import "../../assets/css/App.css";
-import 'react-phone-number-input/style.css'
-import PhoneInput from 'react-phone-number-input/input'
-import { isValidPhoneNumber } from 'react-phone-number-input'
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input/input";
+import { isValidPhoneNumber } from "react-phone-number-input";
+import svgLoading from 'assets/image/loading.svg';
+import { toast } from 'react-toastify';
 
 const base_url = process.env.REACT_APP_BASE_URL;
 
 const FooterPart = () => {
-
   // if (window.performance) {
   //   if (performance.navigation.type == 1) {
   //     document.body.scrollTop = 0;
@@ -21,36 +22,53 @@ const FooterPart = () => {
   const [name, setClientName] = useState("");
   const [phone, setClientNumber] = useState("");
   const [company, setClientCompany] = useState("");
+  const [loading, setLoading] = useState("");
+
   const data = {
     email,
     name,
     phone,
     company,
-    type: "customer"
+    type: "customer",
   };
   const sendClientData = () => {
     if (email === "") {
-      alert("fill email")
+      alert("fill email");
     }
     if (name === "") {
-      alert("fill name")
+      alert("fill name");
     }
     if (phone === "") {
-      alert("fill phone")
+      alert("fill phone");
     }
     if (company === "") {
-      alert("fill company")
+      alert("fill company");
     }
-    isValidPhoneNumber(phone) ? 
-    axios.post(`${base_url}/neon/neon-data`, data).then((res) => {
-      if (res.data.success === true) {
-        alert("Successfully sent")
-        setClientEmail("");
-        setClientName("")
-        setClientCompany("")
-        setClientNumber("")
-      }
-    }) : alert("invalid phone number")
+
+    if (isValidPhoneNumber(phone)) {
+      setLoading("neon");
+      axios.post(`${base_url}/neon/neon-data`, data).then((res) => {
+        if (res.data.success === true) {
+          toast.success('Successfully sent', {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+          });
+          setClientEmail("");
+          setClientName("");
+          setClientCompany("");
+          setClientNumber("");
+        }
+        setLoading("");
+      });
+    } else {
+      toast.error("Invalid phone number");
+    }
   };
 
   return (
@@ -64,14 +82,22 @@ const FooterPart = () => {
             <div>
               <p className="text-2xl text-white font-bold">Main email</p>
               <br />
-              <a href="https://neon-languages@neon-l.com" className="text-xl text-white font-bold">
+              <a
+                href="https://neon-languages@neon-l.com"
+                className="text-xl text-white font-bold"
+              >
                 neon-languages@neon-l.com
               </a>
             </div>
             <p>
-              <p className="text-2xl support text-white font-bold">Support team email</p>
+              <p className="text-2xl support text-white font-bold">
+                Support team email
+              </p>
               <br />
-              <a href="https://teamsupport@neon-l.com" className="text-xl text-white font-bold">
+              <a
+                href="https://teamsupport@neon-l.com"
+                className="text-xl text-white font-bold"
+              >
                 teamsupport@neon-l.com
               </a>
             </p>
@@ -95,7 +121,9 @@ const FooterPart = () => {
                 />
               </div>
               <div className="flex flex-col">
-                <p className="ml-12 text-white font-bold md: ml-0">Company Name</p>
+                <p className="ml-12 text-white font-bold md: ml-0">
+                  Company Name
+                </p>
                 <input
                   value={company}
                   onChange={(e) => setClientCompany(e.target.value)}
@@ -112,7 +140,7 @@ const FooterPart = () => {
                   value={phone}
                   required
                   className="phone_input border-black text-white bg-black w-[full] lg:mb-0 mb-[15px] outline-none text-xl py-[10px] px-4 rounded-full"
-                  onChange={(e:any) => setClientNumber(e)}
+                  onChange={(e: any) => setClientNumber(e)}
                 />
               </div>
               <div className="flex flex-col">
@@ -127,8 +155,14 @@ const FooterPart = () => {
             </div>
           </div>
           <div className="justify-center flex pb-12">
-            <button className="h-[40px] border-black rounded-full w-[100px] bg-black text-white" onClick={() => sendClientData()}>
-              Send
+            <button
+              className="h-[40px] border-black rounded-full w-[100px] bg-black text-white"
+              onClick={() => sendClientData()}
+              disabled={loading==="neon"}
+            >
+              <span>
+              {loading==='neon'&&<img src={svgLoading} alt="loading" className="inline w-4 h-4 mb-1 mr-2 text-white animate-spin" />}
+              Send</span>
             </button>
           </div>
         </Container>

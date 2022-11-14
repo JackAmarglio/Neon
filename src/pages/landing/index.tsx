@@ -11,7 +11,6 @@ import GetStartedPart from "./GetStartedPart";
 import IntroPart from "./IntroPart";
 import ServicePart from "./ServicePart";
 import SupportPart from "./SupportPart";
-
 const LandingPage = () => {
   
   return (
@@ -26,7 +25,7 @@ const LandingPage = () => {
       {/* <ContactInfoPart /> */}
       {/* <Divider /> */}
       <FooterPart />
-      <ScrollTop />
+      <ScrollTop />      
     </div>
   );
 };
