@@ -1,7 +1,6 @@
 import axios from "axios";
 import Container from "components/Container";
 import { useState } from "react";
-import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import "../../assets/css/App.css";
 import 'react-phone-number-input/style.css'
@@ -12,12 +11,12 @@ const base_url = process.env.REACT_APP_BASE_URL;
 
 const FooterPart = () => {
 
-  if (window.performance) {
-    if (performance.navigation.type == 1) {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  }
+  // if (window.performance) {
+  //   if (performance.navigation.type == 1) {
+  //     document.body.scrollTop = 0;
+  //     document.documentElement.scrollTop = 0;
+  //   }
+  // }
   const [email, setClientEmail] = useState("");
   const [name, setClientName] = useState("");
   const [phone, setClientNumber] = useState("");
@@ -30,21 +29,21 @@ const FooterPart = () => {
     type: "customer"
   };
   const sendClientData = () => {
-    if (email == "") {
+    if (email === "") {
       alert("fill email")
     }
-    if (name == "") {
+    if (name === "") {
       alert("fill name")
     }
-    if (phone == "") {
+    if (phone === "") {
       alert("fill phone")
     }
-    if (company == "") {
+    if (company === "") {
       alert("fill company")
     }
     isValidPhoneNumber(phone) ? 
     axios.post(`${base_url}/neon/neon-data`, data).then((res) => {
-      if (res.data.success == true) {
+      if (res.data.success === true) {
         alert("Successfully sent")
         setClientEmail("");
         setClientName("")
@@ -79,7 +78,7 @@ const FooterPart = () => {
             <div>
               <p className="text-2xl text-white font-bold">Interpreter Line</p>
               <br />
-              <a href="" className="text-xl text-white font-bold">
+              <a href="#" className="text-xl text-white font-bold">
                 (860)-935-2645
               </a>
             </div>
