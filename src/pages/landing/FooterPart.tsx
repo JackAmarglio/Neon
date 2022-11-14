@@ -53,6 +53,7 @@ const FooterPart = () => {
       }
     }) : alert("invalid phone number")
   };
+
   return (
     <div className="footer-part">
       <div className="relative px-10" id="contact">
@@ -92,7 +93,7 @@ const FooterPart = () => {
                   onChange={(e) => setClientName(e.target.value)}
                   required
                   className="border-black text-white bg-black w-[full] lg:mb-0 mb-[15px] outline-none text-xl py-[10px] px-4 rounded-full"
-                ></input>
+                />
               </div>
               <div className="flex flex-col">
                 <p className="ml-12 text-white font-bold md: ml-0">Company Name</p>
@@ -101,7 +102,7 @@ const FooterPart = () => {
                   onChange={(e) => setClientCompany(e.target.value)}
                   required
                   className="border-black text-white bg-black w-[full] lg:mb-0 mb-[15px] outline-none text-xl py-[10px] px-4 rounded-full"
-                ></input>
+                />
               </div>
             </div>
             <div className="footer flex md:flex-col">
@@ -122,7 +123,7 @@ const FooterPart = () => {
                   required
                   onChange={(e) => setClientEmail(e.target.value)}
                   className="email_input border-black text-white bg-black w-[full] lg:mb-0 mb-[15px] outline-none text-xl py-[10px] px-4 rounded-full"
-                ></input>
+                />
               </div>
             </div>
           </div>

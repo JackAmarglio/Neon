@@ -95,7 +95,7 @@ const FaqPart = () => {
       <ScrollAnimation animateOnce={false} animateIn="animate__animated animate__fadeInRight">
         <Container>
           <div className="block relative">
-            <h1 className="text-blue-500 text-3xl font-bold leading-[44px] mt-20 relative mb-[32px] inline-block">
+            <h1 className="text-blue-500 font-bold text-3xl font-bold leading-[44px] mt-20 relative mb-[32px] inline-block">
               Service offerings
             </h1>
             {/* <div className="flex flex-col faq-container">
@@ -103,13 +103,13 @@ const FaqPart = () => {
                 <FaqCard key={key} id={key} title={item.title} text={item.text} />
               ))}
             </div> */}
-            <p>As the demand for interpretation services has increased, we are here to assist our clients. The Over Phone Interpreting Services (OPI) we provide have built a network of interpreters who provide quality interpretations.
+            <p className="text-2xl">As the demand for interpretation services has increased, we are here to assist our clients. The Over Phone Interpreting Services (OPI) we provide have built a network of interpreters who provide quality interpretations.
                 With more than 7000 languages spoken worldwide, we are committed to improving and expanding our language support.</p>
             <br />
             <h1 className="text-blue-500 text-3xl font-bold leading-[44px] mt-20 relative mb-[32px] inline-block">
               Testimonial
             </h1>
-            <p>For over a decade, Daiana Kurti, CEO, and Founder of Neon-Languages Project has been an interpreter for the largest language service providers. With her exceptional skills and necessary experience, she initiated a company focused on people and their needs. Dedicated and focused on the future, she continues to improve the company's services according to the needs of its customers</p>
+            <p className="text-2xl">For over a decade, Daiana Kurti, CEO, and Founder of Neon-Languages Project has been an interpreter for the largest language service providers. With her exceptional skills and necessary experience, she initiated a company focused on people and their needs. Dedicated and focused on the future, she continues to improve the company's services according to the needs of its customers</p>
           </div>
           {/* <div>
             <p className="text-lg font-medium pt-4">

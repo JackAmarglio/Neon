@@ -105,7 +105,7 @@ const IntroPart = () => {
           }}
         />
       </Modal>
-      <nav className="left-0 right-0 fixed top-0 pt-6 sm:pt-9 pb-3 md:pb-7 z-80 block z-[100]">
+      <nav className="left-0 right-0 fixed top-0 pt-3 sm:pt-6 pb-3 md:pb-4 z-80 block z-[100]">
         <div className="lg:flex-row flex landing-header mb-4 m-auto constrain">
           <div className="text-center w-full flex sm:block sm:w-auto md:text-left pb-4 sm:pb-2 md:pb-0">
             <p className="text-2xl text-white"> NEON-L </p>
@@ -119,7 +119,7 @@ const IntroPart = () => {
               </div>
             </div> */}
           </div>
-          <div className="flex-grow sm:pt-2 lg:pb-0 pb-2.5 navbar">
+          <div className="flex-grow sm:pt-2 lg:pb-0 pb-2.5 navbar my-auto">
             <ul className="flex flex-row text-right pr-3 sm:pr-0 ml-auto mx-none sm:mx-auto max-w-xs md:max-w-xs font-bold text-white text-base">
               <li className="flex-grow opacity-90 hover:opacity-100 text-2xl">
                 <a href="#about">About</a>
@@ -132,7 +132,7 @@ const IntroPart = () => {
               </li>
             </ul>
           </div>
-          <div className="text-center sm: ml-auto">
+          <div className="text-center sm: ml-auto my-auto">
             <div onClick={openModal} className="" id="getStarted" >
               <div className="text-black inline-block btn bg-white">
                 Apply
