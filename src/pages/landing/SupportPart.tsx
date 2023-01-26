@@ -3,7 +3,7 @@ import React from "react";
 
 import supportImg from "assets/image/service-img.jpg";
 import ScrollAnimation from "react-animate-on-scroll";
-import fileImg from "assets/image/file.jpg"
+import fileImg from "assets/image/file.png"
 
 const SupportPart = () => {
 
