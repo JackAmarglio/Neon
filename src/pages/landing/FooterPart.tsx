@@ -375,7 +375,7 @@ const FooterPart = () => {
                     className="bg-blue-400 absolute mt-[-40px] rounded-[50%]"
                   />
                   <p className="text-2xl text-white mt-5 ml-40">
-                    Main email
+                    Main Email
                     <br />
                     <a
                       href="https://neon-languages@neon-l.com"
@@ -396,7 +396,7 @@ const FooterPart = () => {
                     className="bg-blue-400 absolute mt-[-40px] rounded-[50%]"
                   />
                   <p className="text-2xl text-white mt-5 ml-40">
-                    Support team email
+                    Support Team Email
                     <br />
                     <a
                       href="https://neon-languages@neon-l.com"

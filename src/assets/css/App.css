@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "Futura Std Book";
-  src: url("../fonts/FontsFree-Net-FuturaStd-Book.ttf");
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams.ttf")
 }
 
-@font-face {
-  font-family: "Futura Std Book";
-  src: url("../fonts/FuturaStdBook.otf")
-}
+/* @font-face {
+  font-family: "BebasNeue-Regular";
+  src: url("../fonts/BebasNeue-Regular.otf")
+} */
 
 html {
-  font-family: "Futura Std Book";
+  font-family: "CaviarDreams";
   @apply text-gray-600;
 }
 
@@ -211,7 +211,7 @@ body {
 
 h1,
 p {
-  font-family: Futura Std Book !important;
+  font-family: Roboto-Black !important;
 }
 
 #about {
