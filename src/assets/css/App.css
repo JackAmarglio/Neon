@@ -157,14 +157,14 @@ body {
 
 @media screen and (max-width: 480px) {
   .contract .footer-box a {
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 362px) {
   .contract .footer-box a {
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 0px;
   }
 
