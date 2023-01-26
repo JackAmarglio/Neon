@@ -319,19 +319,23 @@ const FooterPart = () => {
           <div className="pt-10 pb-12 landing-footer">
             <img
               src={CEO}
-              className="icomoon-mail bg-orange pt-5 rounded-[50%] d-flex align-items-center justify-content-center text-white icn wow bounceIn"
+              className="ml-auto mr-auto flex icomoon-mail bg-orange pt-5 rounded-[50%] d-flex align-items-center justify-content-center text-white icn wow bounceIn"
               width="200"
               height="200"
               alt=""
               data-wow-delay="2s"
             />
-            <p className="ml-10 mt-5 text-white text-2xl">
-              CEO - Daiana Kurti
-            </p>
+            <p className="ml-10 mt-5 text-white text-2xl text-center">CEO - Daiana Kurti</p>
             <div className="flex sm:flex-col contract">
               <div className="footer-box flex md:flex-col">
                 <div className="flex justify-content-center">
-                  <img src={WhatsApp} alt="" width="80" height="80" className="absolute mt-[-50px] rounded-[50%]" />
+                  <img
+                    src={WhatsApp}
+                    alt=""
+                    width="50"
+                    height="50"
+                    className="absolute mt-[-40px] rounded-[50%]"
+                  />
                   <p className="text-white text-2xl mt-5 ml-10">
                     Whatsapp <br />{" "}
                     <a href="https://wa.me/message/5RD6ZTGKPPULB1">
@@ -341,7 +345,13 @@ const FooterPart = () => {
                 </div>
               </div>
               <div className="footer-box flex md:flex-col">
-                <img src={Linkedin} alt="" width="80" height="80" className="absolute mt-[-40px] rounded-[50%]" />
+                <img
+                  src={Linkedin}
+                  alt=""
+                  width="50"
+                  height="50"
+                  className="absolute mt-[-40px] rounded-[50%]"
+                />
                 <div className="flex justify-content-center">
                   <p className="text-white text-2xl mt-5 ml-10">
                     LinkedIn
@@ -357,7 +367,13 @@ const FooterPart = () => {
               </div>
               <div className="footer-box flex md:flex-col">
                 <div className="flex justify-content-center">
-                  <img src={Email} alt="" width="80" height="80" className="bg-yellow-600 absolute mt-[-50px] rounded-[50%]" />
+                  <img
+                    src={Email}
+                    alt=""
+                    width="50"
+                    height="50"
+                    className="bg-blue-400 absolute mt-[-40px] rounded-[50%]"
+                  />
                   <p className="text-2xl text-white mt-5 ml-40">
                     Main email
                     <br />
@@ -372,7 +388,13 @@ const FooterPart = () => {
               </div>
               <div className="footer-box flex md:flex-col">
                 <div className="flex justify-content-center">
-                <img src={Email} alt="" width="80" height="80" className="bg-yellow-600 absolute mt-[-50px] rounded-[50%]" />
+                  <img
+                    src={Email}
+                    alt=""
+                    width="50"
+                    height="50"
+                    className="bg-blue-400 absolute mt-[-40px] rounded-[50%]"
+                  />
                   <p className="text-2xl text-white mt-5 ml-40">
                     Support team email
                     <br />
@@ -387,13 +409,17 @@ const FooterPart = () => {
               </div>
               <div className="footer-box flex md:flex-col">
                 <div className="flex justify-content-center">
-                <img src={WhatsApp} alt="" width="80" height="80" className="absolute mt-[-50px] rounded-[50%]" />
+                  <img
+                    src={WhatsApp}
+                    alt=""
+                    width="50"
+                    height="50"
+                    className="absolute mt-[-40px] rounded-[50%]"
+                  />
                   <p className="text-2xl text-white mt-5 ml-40">
                     Interpreter Line
                     <br />
-                    <a className="text-xl text-white">
-                      (860)-935-2645
-                    </a>
+                    <a className="text-xl text-white">(860)-935-2645</a>
                   </p>
                 </div>
               </div>
