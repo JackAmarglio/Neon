@@ -342,9 +342,9 @@ const FooterPart = () => {
                   </a>
                   <p className="text-white text-2xl mt-5 ml-10">
                     Whatsapp <br />{" "}
-                    <a href="https://wa.me/message/5RD6ZTGKPPULB1">
+                    {/* <a href="https://wa.me/message/5RD6ZTGKPPULB1">
                       https://wa.me/message/5RD6ZTGKPPULB1
-                    </a>
+                    </a> */}
                   </p>
                 </div>
               </div>
@@ -362,12 +362,12 @@ const FooterPart = () => {
                   <p className="text-white text-2xl mt-5 ml-10">
                     LinkedIn
                     <br />{" "}
-                    <a
+                    {/* <a
                       className="text-xl text-white"
                       href="https://www.linkedin.com/in/daiana-kurti-591913139"
                     >
                       https://www.linkedin.com/in/daiana-kurti-591913139
-                    </a>
+                    </a> */}
                   </p>
                 </div>
               </div>
