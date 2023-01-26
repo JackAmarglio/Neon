@@ -48,9 +48,6 @@ const SupportPart = () => {
               <p className="text-2xl leading-8 mb-5 m-0">
                 Supporting a large network, Neon-L has extended its service to health, legal, businesses and corporations
               </p>
-              <p className="text-2xl leading-8 mb-5 m-0">
-                We offer document and file translation services, as well as video content and book translations. Our team of experienced linguists is dedicated to providing accurate, high-quality translations that meet your specific needs. With our expertise, you can rest assured that your documents, videos, and books will be accurately translated into the language of your choice.
-              </p>
               {/* <ul className="list-disc text-base text-gray-600 leading-8 pl-5 mb-8">
                 <li>
                   Our bilingual U.S based customer service is available 7 days a
