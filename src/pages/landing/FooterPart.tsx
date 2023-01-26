@@ -325,7 +325,7 @@ const FooterPart = () => {
               alt=""
               data-wow-delay="2s"
             />
-            <p className="ml-10 mt-5 text-white text-2xl text-center">CEO - Daiana Kurti</p>
+            <p className="mt-10 text-white text-2xl text-center">CEO - Daiana Kurti</p>
             <div className="flex sm:flex-col contract">
               <div className="footer-box flex md:flex-col">
                 <div className="flex justify-content-center">
