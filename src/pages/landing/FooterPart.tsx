@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 import CEO from "../../assets/image/CEO.jpg";
 import Linkedin from "../../assets/image/linkedin.jpg";
 import WhatsApp from "../../assets/image/whatsapp.jpg";
-import Email from "../../assets/image/envelope-regular.svg";
+import Email from "../../assets/image/email.jpg";
 
 const base_url = process.env.REACT_APP_BASE_URL;
 
@@ -325,17 +325,21 @@ const FooterPart = () => {
               alt=""
               data-wow-delay="2s"
             />
-            <p className="mt-10 text-white text-2xl text-center">CEO - Daiana Kurti</p>
+            <p className="mt-10 text-white text-2xl text-center">
+              CEO - Daiana Kurti
+            </p>
             <div className="flex sm:flex-col contract">
               <div className="footer-box flex md:flex-col">
                 <div className="flex justify-content-center">
-                  <img
-                    src={WhatsApp}
-                    alt=""
-                    width="50"
-                    height="50"
-                    className="absolute mt-[-40px] rounded-[50%]"
-                  />
+                  <a href="https://wa.me/message/5RD6ZTGKPPULB1">
+                    <img
+                      src={WhatsApp}
+                      alt=""
+                      width="50"
+                      height="50"
+                      className="absolute mt-[-40px] rounded-[50%]"
+                    />
+                  </a>
                   <p className="text-white text-2xl mt-5 ml-10">
                     Whatsapp <br />{" "}
                     <a href="https://wa.me/message/5RD6ZTGKPPULB1">
@@ -345,13 +349,15 @@ const FooterPart = () => {
                 </div>
               </div>
               <div className="footer-box flex md:flex-col">
-                <img
-                  src={Linkedin}
-                  alt=""
-                  width="50"
-                  height="50"
-                  className="absolute mt-[-40px] rounded-[50%]"
-                />
+                <a href="https://www.linkedin.com/in/daiana-kurti-591913139">
+                  <img
+                    src={Linkedin}
+                    alt=""
+                    width="50"
+                    height="50"
+                    className="absolute mt-[-40px] rounded-[50%]"
+                  />
+                </a>
                 <div className="flex justify-content-center">
                   <p className="text-white text-2xl mt-5 ml-10">
                     LinkedIn

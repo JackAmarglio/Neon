@@ -33,6 +33,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1438px) {
+  .file_img {
+    margin-left: 0px !important;
+  }
+}
+
 .landing-intro {
   background: black;
 }
