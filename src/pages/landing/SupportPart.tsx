@@ -22,8 +22,8 @@ const SupportPart = () => {
               <div className="w-full h-full max-h-[600px] p-8 pl-5 md:pl-8 lg:pl-0">
                 <img
                   src={supportImg}
-                  style={{ filter: "grayscale(25%) brightness(110%)" }}
-                  className="relative w-full h-full object-cover rounded-2xl"
+                  style={{ filter: "grayscale(25%) brightness(110%)", width: '300px', height: '300px', marginLeft: '150px' }}
+                  className="relative w-full h-full object-cover rounded-2xl file_img"
                   alt="aboutImg"
                 />
               </div>
