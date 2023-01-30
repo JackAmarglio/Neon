@@ -545,7 +545,7 @@ const SignUpForm = (props: any) => {
                       <div>
                         <ul>
                           <li className="pb-2">
-                            Welcome to visit here as Interpreter
+                            Welcome to Join Our Team
                           </li>
                           <li>
                             Complete the steps below, we continuously monitor and review data
