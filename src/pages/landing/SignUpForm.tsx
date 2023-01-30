@@ -1,7 +1,7 @@
 import React, { useContext, useMemo, useState } from "react";
 import InputMask from "react-input-mask";
 import axios from "axios";
-import earlyAccessImg from "assets/image/early-access-icon.png";
+import earlyAccessImg from "assets/image/register.jpg";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import {
   FaPhoneAlt,
@@ -548,9 +548,7 @@ const SignUpForm = (props: any) => {
                             Welcome to visit here as Interpreter
                           </li>
                           <li>
-                            You need to put all your personal data below.
-                            After we check your data, we will contact you.
-                            Good luck
+                            Complete the steps below, we continuously monitor and review data
                           </li>
                         </ul>
                       </div>
